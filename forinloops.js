@@ -25,3 +25,6 @@ for(let b of "harry"){
     console.log(b);
 }
 
+for(let i in obj){
+    console.log("Marks of " + i + " are "+ obj[i]);
+}
