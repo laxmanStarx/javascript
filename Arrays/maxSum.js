@@ -1,4 +1,5 @@
-function maxSum(arr, k){
+function maxSum(arr, k)
+{
     let windowSum = 0;
     let maxSum = 0;
 
