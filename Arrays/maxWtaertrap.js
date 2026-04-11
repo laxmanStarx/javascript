@@ -21,7 +21,7 @@ function trapWater(arr)
     return maxWater;
 
 }
-let arr = [2,3,4,5,6,78]
+let arr = [78,56,54,67,3,8,9,2]
 
 
 
