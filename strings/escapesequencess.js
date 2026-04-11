@@ -1,4 +1,7 @@
 let fruits = 'apple'
+let fruitss = 'mango \'ees'
+
+console.log(fruitss)
 
 console.log(fruits)
 
