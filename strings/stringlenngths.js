@@ -1,17 +1,17 @@
-let name = "vaibhav"
+let names = "vaibhav"
 console.log(name.length)
-    console.log(name.toUpperCase())
-    for(let i of name){
+    console.log(names.toUpperCase())
+    for(let i of names){
         console.log(i);
     }
 
-    console.log(name.slice(3,5))
+    console.log(names.slice(3,5))
 
-    console.log(name.replace("vai", "Sam"))
+    console.log(names.replace("vai", "Sam"))
 
 
     let friend = "Naman"
-    console.log(name.concat("is a friend of ", friend, "ok"))
+    console.log(names.concat("is a friend of ", friend, "ok"))
 
     let friend2 = "     meena    "
 
