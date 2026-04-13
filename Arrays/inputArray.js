@@ -7,6 +7,6 @@ for(let i of cars){
     console.log(i)
 }
 
-document.getElementById("demo").innerHTML = cars
 
 
+//arrays are special type of objects. The typeof operator in javascript return "object" for arrays.
