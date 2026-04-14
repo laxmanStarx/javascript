@@ -1,3 +1,7 @@
+
+// Javascript array to string
+
+
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 let myList = fruits.toString();
