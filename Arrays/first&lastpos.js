@@ -1,31 +1,58 @@
-function firstLast(arr, target){
+function firstlast(arr, target){
 
-    // let result = [];
+function firstOccurence(arr, target){
 
-    
-        if(arr.length === 0){
-            return [-1,-1]
-        }
+    let left = 0;
+    let right = arr.length -1;
+    let ans = -1;
 
-        let first = -1;
-        let last = -1;
-
-    for(let i = 0; i < arr.length; i++){
-
-
-  
-         if(arr[i] === target ){
-            if(first === -1){
-                first = i;
-            }
-            last = i;
-  
+    while(left <= right){
+        let mid = Math.floor((left + right)/2);
+        if(arr[mid] >= target){
+            if(arr[mid] === target)
+                 ans = mid;
+            right = mid -1
+        }else{
+            left = mid +1;
         }
 
     }
 
-    return result
-
+    return ans;
 }
 
-console.log(firstLast([], 0))
+
+  
+
+
+function lastOccurrence(arr, target){
+    let left = 0;
+    let right = arr.length - 1
+    let ans = -1
+
+    while(left <= right){
+        let mid = Math.floor((left + right)/2)
+
+        if(arr[mid] <= target){
+
+            if(arr[mid] === target)
+                 ans = mid;
+
+            left = mid + 1;
+
+        }else{
+            right = mid -1;
+        }
+
+        
+    }
+    return ans;
+}
+return [firstOccurence(arr, target), lastOccurrence(arr,target)]
+}
+
+console.log(firstlast([44,88,67,78,88,54], 88));
+console.log(firstlast([], 0));
+
+    
+      
