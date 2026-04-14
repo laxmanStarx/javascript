@@ -28,7 +28,7 @@ function three(arr){
             if(j < k && arr[j]  == arr[j-1]){
 
                  j++;
-            }else if( j < k && arr[k] == arr[k-1]){
+            }else if( j < k && arr[k] == arr[k -1]){
                 k--
             }
 
