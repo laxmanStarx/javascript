@@ -6,14 +6,18 @@ function firstOccurence(arr, target){
     let right = arr.length -1;
     let ans = -1;
 
+    arr.sort((a,b) => a - b)
+
     while(left <= right){
         let mid = Math.floor((left + right)/2);
         if(arr[mid] >= target){
             if(arr[mid] === target)
                  ans = mid;
             right = mid -1
+            //   left = mid +1;
         }else{
             left = mid +1;
+            // right = mid -1;
         }
 
     }
@@ -30,6 +34,8 @@ function lastOccurrence(arr, target){
     let right = arr.length - 1
     let ans = -1
 
+        
+
     while(left <= right){
         let mid = Math.floor((left + right)/2)
 
@@ -39,9 +45,11 @@ function lastOccurrence(arr, target){
                  ans = mid;
 
             left = mid + 1;
+            // right = mid -1
 
         }else{
             right = mid -1;
+            //   left = mid +1;
         }
 
         
