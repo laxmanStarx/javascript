@@ -19,10 +19,12 @@
             ["oranges", 450]
         ])
 
-        let source = fruits.get("apple");
+        let source = fruits.get("oranges");
+        let add = fruits.set("guava", 790);
+        let newfruit =  fruits.get("guava")
         
 
-        document.getElementsByClassName("fruit")[0].innerHTML = "there are "  + source + " apples"
+        document.getElementsByClassName("fruit")[0].innerHTML = "there are "  + newfruit + " guava"
     </script>
 </body>
 </html>
