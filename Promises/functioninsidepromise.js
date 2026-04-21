@@ -8,7 +8,7 @@
         }
         script.onerror = () =>{reject(0)}
     })
-    let p1 = loadScript("https://planet-food-992n.vercel.app/")
+    let p1 = loadScript("")
     p1.then((value)=>{
         console.log(value)
     }).catch((error)=>{
